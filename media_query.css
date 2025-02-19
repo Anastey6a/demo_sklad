@@ -1,0 +1,71 @@
+/*-----------------------------------*\
+  #Адаптивні стилі для обліку товарів
+\*-----------------------------------*/
+
+/* Загальні стилі для великих мобільних пристроїв */
+@media (min-width: 450px) {
+  :root {
+    --fs-1: 48px;
+    --fs-2: 32px;
+    --fs-3: 18px;
+  }
+
+  .container {
+    max-width: 400px;
+  }
+}
+
+/* Адаптація для планшетів */
+@media (min-width: 768px) {
+  :root {
+    --fs-1: 60px;
+    --fs-2: 36px;
+    --fs-3: 20px;
+  }
+
+  .container {
+    max-width: 700px;
+  }
+
+  .row-button-group {
+    flex-direction: row;
+  }
+
+  .scanner-container {
+    justify-content: center;
+  }
+}
+
+/* Адаптація для ноутбуків */
+@media (min-width: 1024px) {
+  :root {
+    --fs-1: 72px;
+    --fs-2: 40px;
+    --fs-3: 22px;
+  }
+
+  .container {
+    max-width: 900px;
+  }
+
+  .table {
+    font-size: 1.1rem;
+  }
+}
+
+/* Адаптація для великих екранів */
+@media (min-width: 1200px) {
+  :root {
+    --fs-1: 80px;
+    --fs-2: 44px;
+    --fs-3: 24px;
+  }
+
+  .container {
+    max-width: 1100px;
+  }
+
+  .table {
+    font-size: 1.2rem;
+  }
+}
